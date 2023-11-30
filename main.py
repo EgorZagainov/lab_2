@@ -6,7 +6,7 @@ import sys
 from aiogram import Bot, Dispatcher
 from aiogram.enums import ParseMode
 from config import TOKEN
-from haendlear import start, inline, help_bot, core
+from haendlear import start, inline, help_bot, core, my_id
 
 
 
@@ -17,7 +17,8 @@ async def main () -> None:
         start.router_start,
         inline.router_inline,
         help_bot.router_help,
-        core.router_core
+        core.router_core,
+        my_id.router_my_id
 
     )
     await dp.start_polling(bot)

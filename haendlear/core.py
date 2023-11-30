@@ -6,7 +6,7 @@ from aiogram import Router
 router_core = Router()
 
 
-@router_core.message(Command("reply_builder"))
+@router_core.message(Command("core"))
 async def reply_builder(message: types.Message):
     builder = ReplyKeyboardBuilder()
     for i in range(1, 17):

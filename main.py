@@ -6,7 +6,7 @@ import sys
 from aiogram import Bot, Dispatcher
 from aiogram.enums import ParseMode
 from config import TOKEN
-from haendlear import start, inline, help_bot, core, my_id, stickers
+from handlear import start, inline, help_bot, core, my_id, stickers
 
 
 
